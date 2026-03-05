@@ -43,7 +43,7 @@ public class InfluenceMapBuilder {
       final String mapGroup, final MapWithNeighbors mapWithNeighbors) {
     return Stream.of(buildCombatMaps(mapGroup, mapWithNeighbors))
         .flatMap(Collection::stream)
-        .collect(Collectors.toList());
+        .toList();
   }
 
   public Collection<InfluenceMap> buildCombatMaps(

@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NonNls;
 public final class PlayerEmailValidation {
 
   @NonNls private static final String QUOTED_STRING_REGEX = "\"(?:[^\"\\\\]|\\\\\\p{ASCII})*\"";
-  @NonNls private static final String ATOM_REGEX = "[^()<>@,;:\\\\\".\\[\\] \\x28\\p{Cntrl}]+";
+  @NonNls private static final String ATOM_REGEX = "[^()<>@,;:\\\\\".\\[\\] \\p{Cntrl}]+";
 
   @NonNls
   private static final String WORD_REGEX = "(?:" + ATOM_REGEX + "|" + QUOTED_STRING_REGEX + ")";

@@ -4,6 +4,7 @@ plugins {
     id "eclipse"
     alias(libs.plugins.gradle.versions)
     alias(libs.plugins.spotless) apply false
+    id "org.sonarqube" version "7.1.0.6387"
 }
 
 ext {
