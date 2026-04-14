@@ -35,7 +35,7 @@ import org.jetbrains.annotations.NonNls;
 public class Vault {
   private static final RemoteName VAULT_CHANNEL =
       new RemoteName("games.strategy.engine.vault.IServerVault.VAULT_CHANNEL", IRemoteVault.class);
-  @NonNls private static final String ALGORITHM = "DES";
+  @NonNls private static final String ALGORITHM = "AES";
   // 0xCAFEBABE
   // we encrypt both this value and data when we encrypt data.
   // when decrypting we ensure that KNOWN_VAL is correct and thus guarantee that we are being given
